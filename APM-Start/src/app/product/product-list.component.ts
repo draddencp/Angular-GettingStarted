@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'pm-products',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
   pageTitle = 'Product List';
+  imageWidth = 50;
+  imageMargin = 2;
   // @ts-ignore
   products: [any] = [
     {
@@ -30,7 +32,9 @@ export class ProductListComponent implements OnInit {
       'imageUrl': 'https://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png'
     }
   ];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
